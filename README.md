@@ -32,4 +32,4 @@
 }
 ```
 
-如发现隐私或版权问题，请联系 sujunbin@xmu.edu.cn。
+如发现隐私或版权问题，请在本仓库提交 [Issue](https://github.com/sujunbin/New-Media-Frontiers/issues)。
