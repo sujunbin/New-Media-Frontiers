@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="厦门大学新闻传播学院《新媒体前沿》课程“平台观察”小组研究海报展。每份海报经作者授权公开，并存档于 Zenodo、获得 DOI。">
+  <meta name="color-scheme" content="light">
+  <title>平台观察海报展 | 新媒体前沿</title>
+  <style>
+    :root {
+      --paper: #f7f6f2;
+      --white: #ffffff;
+      --ink: #22332f;
+      --muted: #61706a;
+      --green: #225b4b;
+      --green-dark: #174536;
+      --pale: #eaf0e9;
+      --line: #dce2db;
+      --gold: #a67b36;
+      --width: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-underline-offset: 4px; }
+    a:hover { color: var(--green-dark); }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; border-radius: 3px; }
+    .container { width: min(var(--width), calc(100% - 32px)); margin-inline: auto; }
+    .site-header { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--line); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; flex-wrap: wrap; }
+    .brand { color: var(--ink); font-size: 17px; font-weight: 700; text-decoration: none; }
+    .brand span { margin-left: 8px; color: var(--muted); font-size: 12px; font-weight: 400; }
+    nav { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+    nav a { color: var(--muted); font-size: 14px; text-decoration: none; }
+    nav a:hover { color: var(--green); text-decoration: underline; }
+    .hero { padding: 80px 0 64px; border-bottom: 1px solid var(--line); }
+    .eyebrow { margin: 0 0 14px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    h1 { margin: 0; font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", serif; font-size: clamp(32px, 4.8vw, 52px); font-weight: 600; line-height: 1.35; }
+    .english-title { margin: 12px 0 22px; color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: clamp(17px, 2.4vw, 23px); }
+    .lead { max-width: 680px; margin: 0; color: var(--muted); }
+    .summary { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    .summary strong { color: var(--green); font-size: 18px; }
+    section { padding: 56px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 20px; font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", serif; font-size: clamp(24px, 3vw, 30px); font-weight: 600; }
+    h2 small { margin-left: 12px; color: var(--muted); font-family: Georgia, serif; font-size: 15px; font-weight: 400; }
+    .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { padding: 22px 24px; background: var(--white); border: 1px solid var(--line); border-radius: 6px; }
+    .card h3 { margin: 0 0 8px; font-size: 16px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 22px; }
+    .poster { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+    .poster img { display: block; width: 100%; aspect-ratio: 594 / 841; object-fit: cover; background: var(--pale); }
+    .poster .meta { padding: 14px 16px 18px; }
+    .poster .group { color: var(--gold); font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+    .poster h3 { margin: 4px 0 6px; font-size: 16px; line-height: 1.5; }
+    .poster p { margin: 0 0 8px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .poster .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
+    .empty { padding: 40px 24px; background: var(--white); border: 1px dashed var(--line); border-radius: 6px; color: var(--muted); text-align: center; }
+    footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @media (max-width: 600px) { .hero { padding: 56px 0 44px; } section { padding: 44px 0; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">新媒体前沿<span>Frontiers of New Media</span></a>
+      <nav aria-label="页面导航">
+        <a href="#about">关于展览</a>
+        <a href="#posters">海报</a>
+        <a href="#cite">授权与引用</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="container">
+        <p class="eyebrow">厦门大学新闻传播学院 · 2026 年秋季</p>
+        <h1>平台观察海报展</h1>
+        <p class="english-title">Platform Observation Poster Exhibition</p>
+        <p class="lead">《新媒体前沿》课程学生以小组为单位，选择一个平台、追踪一个平台机制：推荐与分发、创作者激励、直播电商、内容审核与标注、AI 功能接入或数据与用户画像。他们以持续观察、界面走查和公开资料为证据，作出诊断。</p>
+        <div class="summary">
+          <div><strong id="count">0</strong> 份海报已上线</div>
+          <div><strong>20</strong> 个研究小组</div>
+          <div>每份海报存档于 Zenodo 并获得 DOI</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2>关于展览<small>About</small></h2>
+        <div class="cols">
+          <div class="card"><h3>一个平台 × 一个机制</h3><p>不泛谈“平台的利弊”，只追踪一个具体机制如何运作、为谁服务、留下什么后果。</p></div>
+          <div class="card"><h3>证据先于判断</h3><p>证据包括观察日志、带日期的截图、界面走查和平台公开规则，所有结论都标明证据的边界。</p></div>
+          <div class="card"><h3>既不乌托邦，也不反乌托邦</h3><p>从生产力与生产关系的矛盾出发分析，允许“利弊并存”的结论。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="posters">
+      <div class="container">
+        <h2>海报<small>Posters</small></h2>
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+        <div id="empty" class="empty">海报将于 2026 年 12 月下旬上线。仅展示经全体作者书面授权的作品。</div>
+      </div>
+    </section>
+
+    <section id="cite">
+      <div class="container">
+        <h2>授权与引用<small>License &amp; Citation</small></h2>
+        <div class="cols">
+          <div class="card"><h3>作者授权</h3><p>每份海报均经小组全体成员书面同意后公开，著作权归作者所有。署名方式由作者选择。</p></div>
+          <div class="card"><h3>许可协议</h3><p>除另有说明外，海报以 CC BY 4.0 协议发布：注明作者与出处即可转载和引用。</p></div>
+          <div class="card"><h3>引用</h3><p>请以 Zenodo 资源页面上的题名、作者、版本和 DOI 为准。若发现隐私或版权问题，请联系任课教师，我们会及时处理。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      《新媒体前沿》Frontiers of New Media · 任课教师：苏俊斌 · 厦门大学新闻传播学院 · 联系：sujunbin@xmu.edu.cn
+    </div>
+  </footer>
+
+  <script>
+    // 海报数据见 posters.json。每份海报一条记录，经授权后再加入。
+    fetch('posters.json')
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .catch(function () { return []; })
+      .then(function (list) {
+        var g = document.getElementById('gallery');
+        list.forEach(function (p) {
+          var el = document.createElement('article');
+          el.className = 'poster';
+          var img = document.createElement('img');
+          img.src = p.image; img.alt = p.title + ' 海报缩略图'; img.loading = 'lazy';
+          var meta = document.createElement('div'); meta.className = 'meta';
+          var grp = document.createElement('div'); grp.className = 'group'; grp.textContent = '第 ' + p.group + ' 组 · ' + p.platform;
+          var h = document.createElement('h3'); h.textContent = p.title;
+          var a = document.createElement('p'); a.textContent = p.authors;
+          var s = document.createElement('p'); s.textContent = p.abstract;
+          var links = document.createElement('div'); links.className = 'links';
+          if (p.pdf) { var l1 = document.createElement('a'); l1.href = p.pdf; l1.textContent = '查看 PDF'; links.appendChild(l1); }
+          if (p.doi) { var l2 = document.createElement('a'); l2.href = 'https://doi.org/' + p.doi; l2.textContent = 'DOI: ' + p.doi; links.appendChild(l2); }
+          meta.append(grp, h, a, s, links);
+          el.append(img, meta);
+          g.appendChild(el);
+        });
+        document.getElementById('count').textContent = list.length;
+        if (list.length) document.getElementById('empty').hidden = true;
+      });
+  </script>
+</body>
+</html>
